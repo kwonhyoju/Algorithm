@@ -4,11 +4,10 @@ function solution(num) {
     while (answer !== 1) {
         if (answer % 2 === 0) {
             answer = answer / 2;
-            i++;
         } else {
             answer = answer * 3 + 1;
-            i++;
         }
+        i++;
     }
     return i > 500 ? -1 : i;
     // console.log(i);
